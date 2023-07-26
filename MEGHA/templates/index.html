@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,intial-scale=1.0">
+  <title>Life style prediction</title>
+</head>
+<body style="background: #000;">
+  <div class="container">
+    <h1 style="color: powderblue;">Life Style Prediction</h1>
+
+
+    <form action="{{ url_for('predict')}}"method="post">
+      <p class="page-header"></p>
+      <div class="chart-scale">
+       
+        <b style="color: powderblue;" b>
+        <b>How do you rate yourself in consumption of fruits & veggies in a day</b></label>
+        <input type="text" placeholder="Enter 0-10" name="fruits" required>
+        <br><br>
+
+          <b>How do you rate yourself in how much stress you feel in a day</b></label>
+          <input type="text" placeholder="Enter 0-10" name="stress" required>
+          <br>
+             <br>              
+          
+            <b>Number of Places in a day</b></label>
+            <input type="text" placeholder="Enter 0-10" name="places" required>
+            <br>
+        <p class="page-header"></p>
+            <div class="chart-scale">
+          
+                <b>Rate yourself how much you support others in a day</b></label>
+                <input type="text" placeholder="Enter 0-10" name="others" required>
+                <br>
+          
+         <p class="page-header"></p>
+                <div class="chart-scale">
+              
+                    <b>How do you rate yourself in touch with social network in a day</b></label>
+                    <input type="text" placeholder="Enter 0-10" name="social" required>
+                    <br>
+              
+         <p class="page-header"></p>
+                    <div class="chart-scale">
+                     
+                        <b>How you satisfied with your achievement</b></label>
+                        <input type="text" placeholder="Enter 0-10" name="achievment" required>
+                        <br>
+                  
+         <p class="page-header"></p>
+                        <div class="chart-scale">
+                        
+                            <b>BMI range</b></label>
+                            <input type="text" placeholder="Enter 0-10" name="BMI" required>
+                            <br>   
+         <p class="page-header"></p>
+                            <div class="chart-scale">
+                              
+                                <b>How you complete your to-do list</b></label>
+                                <input type="text" placeholder="Enter 0-10" name="todolist" required>
+                                <br>
+         <p class="page-header"></p>
+                                <div class="chart-scale">
+                                
+                                    <b>How do you rate yourself in how much you walk</b></label>
+                                    <input type="text" placeholder="Enter 0-10" name="walk" required>
+                                    <br>                           
+            <p class="page-header"></p>
+                                    <div class="chart-scale">
+                                    
+                                        <b>Live vision about you</b></label>
+                                        <input type="text" placeholder="Enter 0-10" name="vision" required>
+                                        <br>
+             
+          <p class="page-header"></p>
+                                        <div class="chart-scale">
+                                          
+                                            <b>How do you rate your sleep</b></label>
+                                            <input type="text" placeholder="Enter 0-10" name="sleep" required>
+                                            <br>
+          <p class="page-header"></p>
+                                            <div class="chart-scale">
+                                            
+                                                <b>How much you shout in a day</b></label>
+                                                <input type="text" placeholder="Enter 0-10" name="shout" required>
+                                                <br>
+                                                                    
+          <p class="page-header"></p>
+                                                <div class="chart-scale">
+                                              
+                                                    <b>How do you rate your income</b></label>
+                                                    <input type="text" placeholder="Enter 0-10" name="income" required>
+                                                    <br>
+         <p class="page-header"></p>
+                                                    <div class="chart-scale">
+                                                     
+                                                        <b>How much time you spend for your passion</b></label>
+                                                        <input type="text" placeholder="Enter 0-10" name="passion" required>
+                                                        <br>
+                                              
+ <p class="page-header"></p>
+                                                      <div class="chart-scale">
+                                                      
+                                                      <b>How much time you spend for meditation</b></label>
+                                                      <input type="text" placeholder="Enter 0-10" name="meditation" required>
+                                                     <br> <br>   
+                            
+                                <label for="age"><b>Enter Your Age</b></label>
+                                <input type="text" placeholder="Enter age" name="age" required>
+                                 <br><br>
+                                <label for="gender"><b>Enter Your Gender</b></label>
+                                <input type="text" placeholder="Enter male or female" name="gender" required><br><br><br>                            
+                  
+ 
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict Value!</button>
+      </form>
+</div>
+<h3 class="text_center">{{prediction_text}}</h3>
+</div>
+ </body>
+</html>
